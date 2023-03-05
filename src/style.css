@@ -19,3 +19,10 @@
     background-color: rgb(220, 220, 220);
     vertical-align: bottom;
 }
+
+#quote{
+    margin: auto;
+    width: 60%;   
+    font-style: italic; 
+    color: gray;
+}
