@@ -21,6 +21,28 @@ var bikeList = [
 
 function createTable(){
     bikeList.forEach((bike) => {
-        
+        // console.log(bike.bikeName);
+        let tableRow = document.createElement("tr");        
+        let tableDataId = document.createElement("td");
+        let tableDataName = document.createElement("td");
+        let tableDataSize = document.createElement("td");
+        let tableDataUsage = document.createElement("td");
+        let tableDataPrice = document.createElement("td");
+
+        tableDataId.textContent = bike.bikeId;
+        tableDataName.textContent = bike.bikeName;
+        tableDataSize.textContent = bike.bikeWheelSize;
+        tableDataUsage.textContent = bike.bikeUsage;
+        tableDataPrice.textContent = bike.bikePrice;
+
+        tbody.append(tableRow);
+        tableRow.append(tableDataId);
+        tableRow.append(tableDataName);
+        tableRow.append(tableDataSize);
+        tableRow.append(tableDataUsage);
+        tableRow.append(tableDataPrice);
+
     })
 }
+
+createTable();
