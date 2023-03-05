@@ -8,6 +8,12 @@
 * Licenc: GNU GPL
 */
 
+h1{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(205, 205, 205);    
+}
+
 #about {
     margin: auto;
     text-align: center;    
